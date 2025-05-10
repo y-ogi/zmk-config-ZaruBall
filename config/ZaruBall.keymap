@@ -58,7 +58,6 @@
 / {
     macros {
         // When in AML, move to default layer when key (except mouse button) pressed
-
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -155,11 +154,11 @@
             display-name = "Mouse";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&trans  &to_layer_0 N1  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &trans &trans &trans &trans            &bt BT_CLR_ALL  &none  &none  &none  &none  &none
-&trans  &none         &none         &none         &none         &none                  &trans &trans &trans &trans            &bt BT_CLR      &none  &none  &none  &none  &none
-&trans  &none         &none         &none         &none         &none         &none    &trans &trans &trans &trans   &ind_bat &out OUT_TOG    &none  &none  &none  &none  &none
-&trans  &none         &none         &none         &none         &none         &none    &trans &trans &trans &trans   &ind_con &studio_unlock  &none  &none  &none  &none  &none
-&trans                &kp C_MUTE    &trans        &trans        &trans        &trans                                 &trans   &kp DEL                                     &trans
+&trans  &to_layer_0 N1  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &trans &trans &trans &trans                   &to_layer_0 N6  &to_layer_0 N7  &to_layer_0 N8  &to_layer_0 N9      &to_layer_0 N0            &to_layer_0 MINUS
+&trans  &none         &none         &none         &none         &none                  &trans &trans &trans &trans                     &to_layer_0 Y   &to_layer_0 U   &to_layer_0 I   &to_layer_0 O       &to_layer_0 P             &to_layer_0 EQUAL
+&trans  &none         &none         &none         &none         &none         &none    &trans &trans &trans &trans    &msc SCRL_LEFT   &msc SCRL_UP    &mkp LCLK       &mkp MCLK       &mkp RCLK           &to_layer_0 SINGLE_QUOTE  &to_layer_0 SEMICOLON
+&trans  &none         &none         &none         &none         &none         &none    &trans &trans &trans &trans    &msc SCRL_RIGHT  &msc SCRL_DOWN  &mkp MB4        &mkp MB5        &to_layer_0 PERIOD  &to_layer_0 SLASH         &to_layer_0 BACKSLASH
+&trans                &kp C_MUTE    &trans        &trans        &trans        &trans                                  &trans           &trans                                                              &trans
             >;
 //             bindings = <
 // &to_layer_0 ESC             &to_layer_0 N1  &to_layer_0 N2  &to_layer_0 N3  &to_layer_0 N4      &to_layer_0 N5                   &trans &trans &trans &trans                    &to_layer_0 N6  &to_layer_0 N7  &to_layer_0 N8  &to_layer_0 N9      &to_layer_0 N0            &to_layer_0 MINUS
