@@ -10,9 +10,9 @@
         , <&xiao_d 5 GPIO_ACTIVE_HIGH>//M6
         , <&xiao_d 6 GPIO_ACTIVE_HIGH>//M7
 
-        , <&xiao_d 7 GPIO_ACTIVE_HIGH>//T1
+        , <&xiao_d 9 GPIO_ACTIVE_HIGH>//T1
         , <&xiao_d 8 GPIO_ACTIVE_HIGH>//T2
-        , <&xiao_d 9 GPIO_ACTIVE_HIGH>//T3
+        , <&xiao_d 7 GPIO_ACTIVE_HIGH>//T3
         , <&gpio1 10 GPIO_ACTIVE_HIGH>//T4
         , <&gpio0 16 GPIO_ACTIVE_HIGH>//T5
         ;
