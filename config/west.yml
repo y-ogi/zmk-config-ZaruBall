@@ -22,7 +22,7 @@ manifest:
       revision: main
     - name: zmk-naginata
       remote: ImSota
-      revision: main4
+      revision: main
   self:
     path: config
 
